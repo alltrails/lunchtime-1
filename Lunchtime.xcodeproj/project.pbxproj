@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317D8DA125BF786A00A2B9CA /* LunchAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D8DA025BF786A00A2B9CA /* LunchAnnotation.swift */; };
 		DD74F78725BD1554004203F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F78625BD1554004203F6 /* AppDelegate.swift */; };
 		DD74F78925BD1554004203F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F78825BD1554004203F6 /* SceneDelegate.swift */; };
-		DD74F78B25BD1554004203F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F78A25BD1554004203F6 /* ViewController.swift */; };
-		DD74F78E25BD1554004203F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD74F78C25BD1554004203F6 /* Main.storyboard */; };
+		DD74F78B25BD1554004203F6 /* LunchTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F78A25BD1554004203F6 /* LunchTimeViewController.swift */; };
 		DD74F79125BD1554004203F6 /* Lunchtime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD74F78F25BD1554004203F6 /* Lunchtime.xcdatamodeld */; };
 		DD74F79325BD1555004203F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD74F79225BD1555004203F6 /* Assets.xcassets */; };
 		DD74F79625BD1555004203F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD74F79425BD1555004203F6 /* LaunchScreen.storyboard */; };
 		DD74F7A125BD1555004203F6 /* LunchtimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7A025BD1555004203F6 /* LunchtimeTests.swift */; };
-		DD74F7AC25BD1555004203F6 /* LunchtimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7AB25BD1555004203F6 /* LunchtimeUITests.swift */; };
+		DD74F7BD25BD1880004203F6 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7BC25BD1880004203F6 /* ApiHelper.swift */; };
+		DD74F7C225BD21EC004203F6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7C125BD21EC004203F6 /* Place.swift */; };
+		DD74F7CA25BD4F17004203F6 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7C925BD4F17004203F6 /* PlaceTableViewCell.swift */; };
+		DD74F7D825BD56BF004203F6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DD74F7D725BD56BF004203F6 /* SDWebImage */; };
+		DD74F7DD25BD660F004203F6 /* LocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7DC25BD660F004203F6 /* LocationAnnotationView.swift */; };
+		DD74F7E625BE32D2004203F6 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7E525BE32D2004203F6 /* PlaceDetailViewController.swift */; };
+		DD74F7F325BE4E59004203F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7F225BE4E59004203F6 /* Constants.swift */; };
+		DD74F7F725BE6218004203F6 /* FavoriteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74F7F625BE6218004203F6 /* FavoriteHelper.swift */; };
+		DDE05CD925BE935400F5D64B /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE05CD825BE935400F5D64B /* LoaderView.swift */; };
+		DDE05CEC25BF31EB00F5D64B /* FavoriteBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE05CEB25BF31EB00F5D64B /* FavoriteBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,21 +35,14 @@
 			remoteGlobalIDString = DD74F78225BD1554004203F6;
 			remoteInfo = Lunchtime;
 		};
-		DD74F7A825BD1555004203F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD74F77B25BD1554004203F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD74F78225BD1554004203F6;
-			remoteInfo = Lunchtime;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		317D8DA025BF786A00A2B9CA /* LunchAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchAnnotation.swift; sourceTree = "<group>"; };
 		DD74F78325BD1554004203F6 /* Lunchtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lunchtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD74F78625BD1554004203F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD74F78825BD1554004203F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD74F78A25BD1554004203F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD74F78D25BD1554004203F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD74F78A25BD1554004203F6 /* LunchTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchTimeViewController.swift; sourceTree = "<group>"; };
 		DD74F79025BD1554004203F6 /* Lunchtime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lunchtime.xcdatamodel; sourceTree = "<group>"; };
 		DD74F79225BD1555004203F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD74F79525BD1555004203F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,9 +50,15 @@
 		DD74F79C25BD1555004203F6 /* LunchtimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchtimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD74F7A025BD1555004203F6 /* LunchtimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchtimeTests.swift; sourceTree = "<group>"; };
 		DD74F7A225BD1555004203F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD74F7A725BD1555004203F6 /* LunchtimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchtimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD74F7AB25BD1555004203F6 /* LunchtimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchtimeUITests.swift; sourceTree = "<group>"; };
-		DD74F7AD25BD1555004203F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD74F7BC25BD1880004203F6 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		DD74F7C125BD21EC004203F6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DD74F7C925BD4F17004203F6 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		DD74F7DC25BD660F004203F6 /* LocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotationView.swift; sourceTree = "<group>"; };
+		DD74F7E525BE32D2004203F6 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		DD74F7F225BE4E59004203F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD74F7F625BE6218004203F6 /* FavoriteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHelper.swift; sourceTree = "<group>"; };
+		DDE05CD825BE935400F5D64B /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		DDE05CEB25BF31EB00F5D64B /* FavoriteBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoriteBtn.swift; path = Lunchtime/Controller/FavoriteBtn.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD74F7D825BD56BF004203F6 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DD74F79925BD1555004203F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD74F7A425BD1555004203F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,7 +85,6 @@
 			children = (
 				DD74F78525BD1554004203F6 /* Lunchtime */,
 				DD74F79F25BD1555004203F6 /* LunchtimeTests */,
-				DD74F7AA25BD1555004203F6 /* LunchtimeUITests */,
 				DD74F78425BD1554004203F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +94,6 @@
 			children = (
 				DD74F78325BD1554004203F6 /* Lunchtime.app */,
 				DD74F79C25BD1555004203F6 /* LunchtimeTests.xctest */,
-				DD74F7A725BD1555004203F6 /* LunchtimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +101,12 @@
 		DD74F78525BD1554004203F6 /* Lunchtime */ = {
 			isa = PBXGroup;
 			children = (
-				DD74F78625BD1554004203F6 /* AppDelegate.swift */,
-				DD74F78825BD1554004203F6 /* SceneDelegate.swift */,
-				DD74F78A25BD1554004203F6 /* ViewController.swift */,
-				DD74F78C25BD1554004203F6 /* Main.storyboard */,
-				DD74F79225BD1555004203F6 /* Assets.xcassets */,
-				DD74F79425BD1555004203F6 /* LaunchScreen.storyboard */,
+				DDE05CE525BE973C00F5D64B /* Controller */,
+				DDE05CE225BE970700F5D64B /* API */,
+				DDE05CDF25BE96FC00F5D64B /* Model */,
+				DD74F7F225BE4E59004203F6 /* Constants.swift */,
+				DDE05CDC25BE96DF00F5D64B /* Misc */,
 				DD74F79725BD1555004203F6 /* Info.plist */,
-				DD74F78F25BD1554004203F6 /* Lunchtime.xcdatamodeld */,
 			);
 			path = Lunchtime;
 			sourceTree = "<group>";
@@ -122,13 +120,55 @@
 			path = LunchtimeTests;
 			sourceTree = "<group>";
 		};
-		DD74F7AA25BD1555004203F6 /* LunchtimeUITests */ = {
+		DDE05CDC25BE96DF00F5D64B /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				DD74F7AB25BD1555004203F6 /* LunchtimeUITests.swift */,
-				DD74F7AD25BD1555004203F6 /* Info.plist */,
+				DD74F78625BD1554004203F6 /* AppDelegate.swift */,
+				DD74F78825BD1554004203F6 /* SceneDelegate.swift */,
+				DD74F79225BD1555004203F6 /* Assets.xcassets */,
+				DD74F79425BD1555004203F6 /* LaunchScreen.storyboard */,
+				DD74F78F25BD1554004203F6 /* Lunchtime.xcdatamodeld */,
 			);
-			path = LunchtimeUITests;
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		DDE05CDF25BE96FC00F5D64B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD74F7C125BD21EC004203F6 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDE05CE225BE970700F5D64B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DD74F7BC25BD1880004203F6 /* ApiHelper.swift */,
+				DD74F7F625BE6218004203F6 /* FavoriteHelper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DDE05CE525BE973C00F5D64B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD74F78A25BD1554004203F6 /* LunchTimeViewController.swift */,
+				DD74F7E525BE32D2004203F6 /* PlaceDetailViewController.swift */,
+				DDE05CE825BE974D00F5D64B /* Views */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDE05CE825BE974D00F5D64B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				317D8DA025BF786A00A2B9CA /* LunchAnnotation.swift */,
+				DDE05CEB25BF31EB00F5D64B /* FavoriteBtn.swift */,
+				DDE05CD825BE935400F5D64B /* LoaderView.swift */,
+				DD74F7DC25BD660F004203F6 /* LocationAnnotationView.swift */,
+				DD74F7C925BD4F17004203F6 /* PlaceTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +187,9 @@
 			dependencies = (
 			);
 			name = Lunchtime;
+			packageProductDependencies = (
+				DD74F7D725BD56BF004203F6 /* SDWebImage */,
+			);
 			productName = Lunchtime;
 			productReference = DD74F78325BD1554004203F6 /* Lunchtime.app */;
 			productType = "com.apple.product-type.application";
@@ -169,24 +212,6 @@
 			productReference = DD74F79C25BD1555004203F6 /* LunchtimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DD74F7A625BD1555004203F6 /* LunchtimeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD74F7B625BD1555004203F6 /* Build configuration list for PBXNativeTarget "LunchtimeUITests" */;
-			buildPhases = (
-				DD74F7A325BD1555004203F6 /* Sources */,
-				DD74F7A425BD1555004203F6 /* Frameworks */,
-				DD74F7A525BD1555004203F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD74F7A925BD1555004203F6 /* PBXTargetDependency */,
-			);
-			name = LunchtimeUITests;
-			productName = LunchtimeUITests;
-			productReference = DD74F7A725BD1555004203F6 /* LunchtimeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,10 +228,6 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = DD74F78225BD1554004203F6;
 					};
-					DD74F7A625BD1555004203F6 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = DD74F78225BD1554004203F6;
-					};
 				};
 			};
 			buildConfigurationList = DD74F77E25BD1554004203F6 /* Build configuration list for PBXProject "Lunchtime" */;
@@ -218,13 +239,15 @@
 				Base,
 			);
 			mainGroup = DD74F77A25BD1554004203F6;
+			packageReferences = (
+				DD74F7D625BD56BF004203F6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = DD74F78425BD1554004203F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DD74F78225BD1554004203F6 /* Lunchtime */,
 				DD74F79B25BD1555004203F6 /* LunchtimeTests */,
-				DD74F7A625BD1555004203F6 /* LunchtimeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,18 +259,10 @@
 			files = (
 				DD74F79625BD1555004203F6 /* LaunchScreen.storyboard in Resources */,
 				DD74F79325BD1555004203F6 /* Assets.xcassets in Resources */,
-				DD74F78E25BD1554004203F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DD74F79A25BD1555004203F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD74F7A525BD1555004203F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,10 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD74F78B25BD1554004203F6 /* ViewController.swift in Sources */,
+				DD74F7E625BE32D2004203F6 /* PlaceDetailViewController.swift in Sources */,
+				317D8DA125BF786A00A2B9CA /* LunchAnnotation.swift in Sources */,
+				DD74F78B25BD1554004203F6 /* LunchTimeViewController.swift in Sources */,
 				DD74F78725BD1554004203F6 /* AppDelegate.swift in Sources */,
 				DD74F78925BD1554004203F6 /* SceneDelegate.swift in Sources */,
+				DD74F7CA25BD4F17004203F6 /* PlaceTableViewCell.swift in Sources */,
+				DDE05CD925BE935400F5D64B /* LoaderView.swift in Sources */,
+				DD74F7F325BE4E59004203F6 /* Constants.swift in Sources */,
+				DD74F7C225BD21EC004203F6 /* Place.swift in Sources */,
 				DD74F79125BD1554004203F6 /* Lunchtime.xcdatamodeld in Sources */,
+				DDE05CEC25BF31EB00F5D64B /* FavoriteBtn.swift in Sources */,
+				DD74F7DD25BD660F004203F6 /* LocationAnnotationView.swift in Sources */,
+				DD74F7BD25BD1880004203F6 /* ApiHelper.swift in Sources */,
+				DD74F7F725BE6218004203F6 /* FavoriteHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD74F7A325BD1555004203F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD74F7AC25BD1555004203F6 /* LunchtimeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,22 +309,9 @@
 			target = DD74F78225BD1554004203F6 /* Lunchtime */;
 			targetProxy = DD74F79D25BD1555004203F6 /* PBXContainerItemProxy */;
 		};
-		DD74F7A925BD1555004203F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD74F78225BD1554004203F6 /* Lunchtime */;
-			targetProxy = DD74F7A825BD1555004203F6 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD74F78C25BD1554004203F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD74F78D25BD1554004203F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD74F79425BD1555004203F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -517,46 +521,6 @@
 			};
 			name = Release;
 		};
-		DD74F7B725BD1555004203F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K932N3M4UW;
-				INFOPLIST_FILE = LunchtimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = magic.LunchtimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Lunchtime;
-			};
-			name = Debug;
-		};
-		DD74F7B825BD1555004203F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K932N3M4UW;
-				INFOPLIST_FILE = LunchtimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = magic.LunchtimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Lunchtime;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -587,16 +551,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD74F7B625BD1555004203F6 /* Build configuration list for PBXNativeTarget "LunchtimeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD74F7B725BD1555004203F6 /* Debug */,
-				DD74F7B825BD1555004203F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD74F7D625BD56BF004203F6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD74F7D725BD56BF004203F6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD74F7D625BD56BF004203F6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DD74F78F25BD1554004203F6 /* Lunchtime.xcdatamodeld */ = {

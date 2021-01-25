@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "iconfinder__list_bullets_points_checklist_choose-_4213431.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
