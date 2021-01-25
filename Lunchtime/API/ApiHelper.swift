@@ -33,8 +33,11 @@ class ApiHelper {
             do {
                 let placeSearchData = try decoder.decode(PlaceSearchModel.self, from: data)
                 let places = placeSearchData.results.map({ return PlaceInterface(place: $0) })
+                
+                let error = ApiHelper.getPlaceSearchError(data: placeSearchData)
+                
                 DispatchQueue.main.async {
-                    completion(places, nil)
+                    completion(places, error)
                 }
             } catch let e {
                 DispatchQueue.main.async {
@@ -44,8 +47,19 @@ class ApiHelper {
 
         }.resume()
     }
-
+    
     //MARK: - Private
+    
+    static private func getPlaceSearchError(data: PlaceSearchModel) -> PlaceError? {
+        let error: PlaceError?
+        if data.errorDescription != nil {
+            error = PlaceError.nearbysearch(status: data.status, errorDescription: data.errorDescription)
+        } else {
+            error = nil
+        }
+        
+        return error
+    }
 
     private enum Constants: String {
         case apiKey = "AIzaSyDIKzjfQQCahwJ9yEr8gBU9TqJ3MvbPXyY"
@@ -85,3 +99,18 @@ class ApiHelper {
         }
     }
 }
+
+/// Error to handle issues from  GoogleApi
+enum PlaceError: Error {
+    case nearbysearch(status: String, errorDescription: String?)
+}
+
+extension PlaceError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .nearbysearch(status: let status, errorDescription: let errorDescription):
+            return "UrlRequest error \"\(errorDescription ?? "")\" (status: \(status))"
+        }
+    }
+}
+

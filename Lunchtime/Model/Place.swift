@@ -12,6 +12,7 @@ struct PlaceSearchModel: Decodable {
     let nextPageToken: String?
     let results: [Place]
     let status: String
+    let errorDescription: String?
 }
 
 struct Place: Decodable {

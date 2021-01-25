@@ -27,7 +27,6 @@ class PlaceDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        print("\(String(describing: place))")
     }
 
     private var place: PlaceInterface?
@@ -155,7 +154,7 @@ class PlaceDetailViewController: UIViewController {
         openLb.backgroundColor = openLbColor
 
         if let url = URL(string: place.icon) {
-            iconView.sd_setImage(with: url, placeholderImage: UIImage(named: ""), options: .waitStoreCache, context: nil)
+            iconView.sd_setImage(with: url, placeholderImage: UIImage(named: "empty"), options: .waitStoreCache, context: nil)
         }
     }
 

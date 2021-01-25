@@ -244,8 +244,7 @@ class LunchTimeViewController: UIViewController, UITableViewDelegate, UITableVie
             self.loaderView.stop()
             self.toggleBtn.isHidden = false
             guard let places = places,
-                  error == nil else {
-                //TODO: handle api errors
+                  error == nil else {                
                 print("Error: \(String(describing: error))")
                 return
             }

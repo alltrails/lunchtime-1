@@ -30,7 +30,7 @@ class PlaceTableViewCell: UITableViewCell {
         favoriteBtn.isFavorite = isFavorite
 
         if let url = URL(string: place.icon) {
-            iconView.sd_setImage(with: url, placeholderImage: UIImage(named: ""), options: .waitStoreCache, context: nil)
+            iconView.sd_setImage(with: url, placeholderImage: UIImage(named: "empty"), options: .waitStoreCache, context: nil)
         }
     }
 
